@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>100% Serious Horoscope</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="jumbotron.css" rel="stylesheet">-->
+	
+	<style>
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+	
+	body{
+		background-color: rgb(1, 3, 41);
+	}
+	
+	h1, h2, .display-3 {
+		font-weight: bold;
+	}
+	
+	h1, h2, p {
+		color: rgb(81,192,218);
+	}
+	
+	.btn {
+		background-color: rgb(81,192,218);
+		color: rgb(1, 3, 41);
+		
+	}
+	
+	
+	.col-md-4{
+		text-align: center;
+	}
+	
+	.horoscope-text {
+		display: none;
+	}
+	</style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Daily Horoscope</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" onclick="alert('We are looking to hire someone who can speak fluent Spanish. \n\nPlease apply if you have an interest in predicting the future, send an application to whyisthishappeningplssendhelp@gmail.com. \n\nWe only accept applications from people who are 100% serious.\n\n\n\n\n\nAyúdame por favor, no tengo ni idea de lo que estoy haciendo.')">Español</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="container" style="padding-top:5%">
+          <h1 class="display-3">Horoscopes for: <script> document.write(new Date().toLocaleDateString())</script></h1>
+          <p>Welcome to the place for horoscopes. </p>
+        </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Aquarius</h2>
+            <p><img src="./Images/Aquarius.jpg"> <span id="aquarius-horoscope" class="horoscope-text"></span></p>
+            <p><div class="bloo btn btn-secondary bloo" onclick="displayText('aquarius-horoscope', 'aquarius-button')" role="button" id="aquarius-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Pisces</h2>
+            <p><img src="./Images/Pisces.jpg"> <span id="pisces-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('pisces-horoscope', 'pisces-button')"  role="button" id="pisces-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Aries</h2>
+            <p><img src="./Images/Aries.jpg"> <span id="aries-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('aries-horoscope', 'aries-button')"  role="button" id="aries-button">View Horoscope</div></p>
+          </div>
+        </div>
+		
+		<div class="row">
+          <div class="col-md-4">
+            <h2>Taurus</h2>
+            <p><img src="./Images/Taurus.jpg"> <span id="taurus-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('taurus-horoscope', 'taurus-button')"  role="button" id="taurus-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Gemini</h2>
+            <p><img src="./Images/Gemini.jpg"> <span id="gemini-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('gemini-horoscope', 'gemini-button')"  role="button" id="gemini-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Cancer</h2>
+            <p><img src="./Images/Cancer.jpg"><span id="cancer-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('cancer-horoscope', 'cancer-button')"  role="button" id="cancer-button">View Horoscope</div></p>
+          </div>
+        </div>
+		
+		<div class="row">
+          <div class="col-md-4">
+            <h2>Leo</h2>
+            <p><img src="./Images/Leo.jpg"> <span id="leo-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('leo-horoscope', 'leo-button')"  role="button" id="leo-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Virgo</h2>
+            <p><img src="./Images/Virgo.jpg"> <span id="virgo-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('virgo-horoscope', 'virgo-button')"  role="button" id="virgo-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Libra</h2>
+            <p><img src="./Images/Libra.jpg"> <span id="libra-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('libra-horoscope', 'libra-button')"  role="button" id="libra-button">View Horoscope</div></p>
+          </div>
+        </div>
+		
+		<div class="row">
+          <div class="col-md-4">
+            <h2>Scorpio</h2>
+            <p><img src="./Images/Scorpio.jpg"> <span id="scorpio-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('scorpio-horoscope', 'scorpio-button')"  role="button" id="scorpio-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Sagittarius</h2>
+            <p><img src="./Images/Sagittarius.jpg"> <span id="sagittarius-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('sagittarius-horoscope', 'sagittarius-button')"  role="button" id="sagittarius-button">View Horoscope</div></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Capricorn</h2>
+            <p><img src="./Images/Capricorn.jpg"> <span id="capricorn-horoscope" class="horoscope-text"></span></p>
+            <p><div class="btn btn-secondary" onclick="displayText('capricorn-horoscope', 'capricorn-button')"  role="button" id="capricorn-button">View Horoscope</div></p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; All rights belong to the Trompetería company</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	<script>
+  
+  
+  const horoscopes = [
+  "Today the stars bring with them a new musical side to you. Perhaps you should try belting your heart out, or maybe invest in a trumpet shop - the cosmos is indicating that this will be a wise investment. We cannot be held liable for any financial losses you make.",
+  "Saturn is rising over the constellation of Aries today, filling your day with fear. You'll need a lot of courage to overcome the anxiety being thrown your way. It'd be wise to steer clear of scary films today (even the short ones you can find on YouTube). We are not responsible for affiliate content",
+  "The horoscope is playing in to your youthful, playful side today. You would be wise to tap in to your inner child - try to play a game of caballería or stuck in the mud to bring out the best in you today.",
+  "Confidence and a desire to party are being brought your way, today. You strike inspiration from Eurovision or other party game shows, maybe try experimenting with some honey and enjoy yourself. Note, we can't be held responsible for the actions that follow after letting your hair down in some honey",
+  "Pluto is in orbit today and is bringing a feeling of shame and talking out of turn. Take this time to reflect on how to be quiet, you can take this to the next level by putting an apple in your mouth, Cochinillo",
+  "Mars is brining wrath and anger today. You'll need a strong outlet for these uncontrollable feelings. Perhaps partake in some Mario Kart and allow yourself to take out your anger on the poor passerbys.",
+  "Your day will be full of feelings of fear and self doubt. Don't take this to heart too much, these feelings of cold-feet will pass in time. Make sure that you put some socks on before you wear your sandals today",
+  "Lucky you, today is filled with growth and learning. It's the perfect day to try something new, such as a new cooking recipe or learning a new language. Something is telling me that a beetroot cake would do you some good, or perhaps talking to a friend in Villanese or Pinguinese.",
+  "It's a tricky day to determine today. Unfortunately the stars aren't speaking very loudly, but seem to suggest that knowledge and wisdom will grace you today. Maybe it's time you put that knowledge to use and finalise that new theory that you've been working on.",
+  "Bad news. The Moon of Aries is in town today. Your day will be filled with bad luck. Best not to try too many new things today: take it easy, relax and maybe watch a film that you've been planning to watch for a while in The Room that you're in. Remember some SPOONs for the food you might eat during the day.",
+  "Saturn brings wealth and money joy with it today. Your pockets will be lined nicely. You can finally replace those holey socks that you have been wearing to the last however long.",
+  "The stars indicate that you have been working too much recently, which has been taking its toll on your brain. Spend the day relaxing so that your memory has time to recover from the recent fish attacks.",
+  "Venus brings out your vulnerable side today. It's good to show this side to you every now and then. Make sure that people don't take advantage of you though - those people that look like they want you to join their cult probably do. And it won't be good.",
+  "Earth's position in the solar system at the moment brings a sense of growth and makes you feel at one with nature. We suggest that you try your hand at gardening, maybe try growing some chillis or aubergines. Make sure you wash your hands after handling them though.",
+  "Yes! Today is party time - let yourself be free and see where the evening takes you. Note we cannot be liable for what you decide to do with your life, however we strongly advise against kissing too many elbows.",
+  "The stars are aligning for you today, and they bring with them a pure sense of understanding. We can't be certain what 'understanding' means, but the number 27% is coming to mind",
+  "Libra brings with it a sense of openness and sharing to your day. You may be told some good news from family members or let in to a secret from some friends. Whatever you do, don't let this go to your head and feel that it is safe to share whether you like pineapple on pizza or not.",
+  "Gemini is verging on the horizon today, and brings with it a source of self confidence and knowledge. If you feel that this starts making you a bit big-headed, go and try an escape room to bring you back down to Earth. Perhaps try the escape rooms on cazadores de escapes and see if you can work out how to play 2 player",
+  "Taurus comes in to view today which, as an Earth sign, brings with it safety and security. To keep yourself feeling like this all day, maybe don't look under your bed in case there are some devilish Shy Guys hiding under there.",
+  "Generosity is the gift of today, courtesy of Virgo. In order to fulfill your desire to share today, you could try playing some Mario Kart and sharing the gift of a green shell or a bomb. I'm sure others would love that.",
+  "Today's star alignment brings with it a sense of creativity. You may feel inspiration to continue with that project that you have been working on for a while. Perhaps trying to make a film or trailer using animal crossing would be a good idea.",
+  "Your horoscope today indicates that you might be feeling bold and daring. This is an exciting day for you. Don't let it go to your head, and definitely don't accept any challenges today that you might regret at a later date.",
+  "Today isn't a very exciting day in terms of horoscope. You might be feeling a little bit bored. We advise that you lean in to that instead of trying to start a water balloon fight with the local youths.",
+  "Mercury is bringing a lot of talent with it today, and you will feel very ambitious. This would be the best time for you to try that singing career that you've always wanted. There are plenty of apps out there that can give you a head start.",
+  "Love and lust is on the horizon today, as venus comes in to view. The planet of love will bring with it a lot of passion. We advise against jumping straight in and trying the first thing you see on the internet. Of course, you can do as you please but we take no responsibility if you try something involving lemons that you may have seen.",
+  "Uranus brings a happy sight of wealth a long with it. You will come in to some money in the foreseeable future. Make sure that you don't waste it all in a casino.",
+  "Your social skills will be tested out today, as Neptune rears its head. The opportunity to talk to someone important, maybe a business interest is on the horizon. If you want to practice before this important meeting, maybe speak to a furby first."
+  ];
+  
+  var day = new Date().getDate() % horoscopes.length;
+  //console.log(day);
+  //console.log(horoscopes.length);
+  document.getElementById("aquarius-horoscope").innerHTML = horoscopes[(day+1) % horoscopes.length];
+  document.getElementById("pisces-horoscope").innerHTML = horoscopes[(day+2)% horoscopes.length];
+  document.getElementById("aries-horoscope").innerHTML = horoscopes[(day+3)% horoscopes.length];
+  
+  document.getElementById("taurus-horoscope").innerHTML = horoscopes[(day+4)% horoscopes.length];
+  document.getElementById("gemini-horoscope").innerHTML = horoscopes[(day+5)% horoscopes.length];
+  document.getElementById("cancer-horoscope").innerHTML = horoscopes[(day+6)% horoscopes.length];
+  
+  document.getElementById("leo-horoscope").innerHTML = horoscopes[(day+7)% horoscopes.length];
+  document.getElementById("virgo-horoscope").innerHTML = horoscopes[(day+8)% horoscopes.length];
+  document.getElementById("libra-horoscope").innerHTML = horoscopes[(day+9)% horoscopes.length];
+  
+  document.getElementById("scorpio-horoscope").innerHTML = horoscopes[(day+10)% horoscopes.length];
+  document.getElementById("sagittarius-horoscope").innerHTML = horoscopes[(day+11)% horoscopes.length];
+  document.getElementById("capricorn-horoscope").innerHTML = horoscopes[(day+12)% horoscopes.length];
+  
+  document.getElementById("aquarius-horoscope").style.display = "none";
+  document.getElementById("pisces-horoscope").style.display = "none";
+  document.getElementById("aries-horoscope").style.display = "none";
+  
+  document.getElementById("taurus-horoscope").style.display = "none";
+  document.getElementById("gemini-horoscope").style.display = "none";
+  document.getElementById("cancer-horoscope").style.display = "none";
+  
+  document.getElementById("leo-horoscope").style.display = "none";
+  document.getElementById("virgo-horoscope").style.display = "none";
+  document.getElementById("libra-horoscope").style.display = "none";
+  
+  document.getElementById("scorpio-horoscope").style.display = "none";
+  document.getElementById("sagittarius-horoscope").style.display = "none";
+  document.getElementById("capricorn-horoscope").style.display = "none";
+  
+  
+  function displayText(id, buttonId){
+	if(document.getElementById(id).style.display == "none"){
+		document.getElementById(id).style.display = "block"
+		document.getElementById(id).style.transition = "all 2s"
+		document.getElementById(buttonId).innerHTML = "Hide Horoscope"
+	}
+	else {
+	document.getElementById(id).style.display = "none"
+	document.getElementById(id).style.transition = "all 2s"
+	document.getElementById(buttonId).innerHTML = "View Horoscope"
+	}
+  
+  }
+  
+  
+</script>
+  </body>
+</html>
